@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Constructive Stuff &amp; Co.</title>
+	<!-- <script src="external.js"></script> -->
+	<script>
+		function validEmail(){
+			//get input from user, save ot var
+			var inputE = document.getElementById("emailData").value;
+
+			//check for the @ symbol
+			//using indexof() - this will return a number of where the @ is in the string
+
+      function arrayPlay(){
+        var myarray = [];
+        myArray[0] = "monday";
+        myArray[1] = "tuesday";
+        document.getElementById("arraydemo1").innerHTML = myArray;
+        myArray[2] = document.getElementById("arraydemo2").textContent ;
+        document.getElementById("arraydemo3").innerHTML = myArray;
+      }
+
+      function validate(){
+        var formData = [];
+        formData [0] = document.getElementById('nameData').value;
+        formData[1] = document.getElementById('emailData').value;
+
+        if(formData[0].length < 2){
+          formData[1] = document.getElementById('feedback').innerHTML = "not a valid name";
+      }
+      var symbol = formData[1].indexOf('@');
+			//get the index of the . and if >0 that means its present
+			//if not there give feedback  e@email.com
+			if(symbol < 1){
+				document.getElementById("emailFeedback").innerHTML = "Not valid";
+			}
+
+			}
+		}
+
+	</script>
+  </head>
+  <body>
+<!--
+  <p id="arraydemo1"> array example</p>
+  <p id="arraydemo2"> wednesday</p>
+  <p id="arraydemo3"></p>
+  <input type="button" value="submit" onclick="arrayPlay()">
+
+-->
+  <form>
+    <label>Enter your name</label>
+    <br>
+    <input type="text" id="nameData">
+    <p id="feedback"> </p>
+
+    <label>Enter your email</label>
+    <input type="text" id="emailData">
+    <p id="emailfeedback"> </p>
+    <input type="button" value="Submit" onclick="validate()" >
+
+  </form>
+
+  </body>
+ </html>

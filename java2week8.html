@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Functions</title>
+    </head>
+
+<script>
+var fname;
+fname = prompt("enter your name", "");
+function y(fname){
+//document.write("Hello " +fname+", how are you ");
+  //document.getElementById("demo").innerHTML = "Hi "+ fname;
+  document.getElementById("myheading").innerHTML = "Hi " + fname;
+}
+
+
+</script>
+
+
+<body>
+<!--<body onload="y()"-->
+  <form>
+    <input type="button" value="Click me" onclick="y(fname)">
+  </form>
+  <!--<p id="demo">
+  </p>-->
+  <h1 id="myheading">
+  </h1>
+</body>
+
+
+</html>

@@ -1,0 +1,41 @@
+<!--external javascript website-->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Week 9 java game example
+    </title>
+
+    <script>
+      function validate(){
+        //gets data from the form
+        var input = document.getElementById("formData").value;
+        //check - more than 1 letter
+        if(input.length < 2){
+          document.getElementById("feedback").innerHTML="not a valid name";
+        }
+      //give user feedback
+    }
+
+    </script>
+
+  </head>
+
+
+
+  <body>
+      <form>
+        <label>Enter your name</label>
+        <br>
+        <input type="text" id="formData">
+        <p id="feedback"> </p>
+        <br>
+        <input type="button" value="Submit" onclick="validate()" >
+
+
+      </form>
+
+
+
+  </body>
+</html>
